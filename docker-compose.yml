@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: cadastro-operacoes-angular
+    container_name: cadastrodeoperacoesangular-app
+    ports:
+      - "4200:4200"
